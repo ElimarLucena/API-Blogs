@@ -1,23 +1,22 @@
+require('dotenv').config();
+
+const options = {
+  username: process.env.MYSQL_USER || 'root',
+  password: process.env.MYSQL_PASSWORD || 'password',
+  database: process.env.MYSQL_DATABASE || 'blogs-api',
+  host: process.env.HOSTNAME || 'localhost',
+  port: process.env.MYSQL_PORT || '3306',
+  dialect: 'mysql',
+};
+
 module.exports = {
   development: {
-    username: 'root',
-    password: null,
-    database: 'database_development',
-    host: '127.0.0.1',
-    dialect: 'mysql',
+    ...options,
   },
   test: {
-    username: 'root',
-    password: null,
-    database: 'database_development',
-    host: '127.0.0.1',
-    dialect: 'mysql',
+    ...options,
   },
   production: {
-    username: 'root',
-    password: null,
-    database: 'database_development',
-    host: '127.0.0.1',
-    dialect: 'mysql',
+    ...options,
   },
 };
