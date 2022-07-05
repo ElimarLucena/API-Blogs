@@ -22,7 +22,7 @@ services:
     image: mysql:8.0.21
     restart: always
     volumes:
-      - ./db:/var/lib/mysql
+      - ./src/database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
     ports:
