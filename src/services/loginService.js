@@ -1,5 +1,5 @@
 const { User } = require('../database/models');
-const generateJWTToken = require('../utils/jwt.js');
+const generateJWTToken = require('../utils/jwt');
 
 const authenticate = async (payload) => {
   const { email, password } = payload;
