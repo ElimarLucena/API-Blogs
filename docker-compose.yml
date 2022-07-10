@@ -18,7 +18,7 @@ services:
     environment:
       MYSQL_USER: root
       MYSQL_PASSWORD: password
-      MYSQL_DATABASE: blogs-api
+      MYSQL_DATABASE: blogs_api
       HOSTNAME: db
   db:
     container_name: blogs_api_database
