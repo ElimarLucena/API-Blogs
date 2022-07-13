@@ -45,7 +45,7 @@ O **Blogs Api** é uma aplicação RESTful para a manipulação e consultas de p
 <details>
     <summary><strong>🐋 Before Starting</strong></summary>
     
-  -  você vai precisar ter instalado em sus máquina o **docker** e **docker-compose**.
+  -  você vai precisar ter instalado em sua máquina o **docker** e **docker-compose**.
     
   -  Lembre-se de parar o **mysql** se estiver usando localmente na porta padrão (3306).
     
