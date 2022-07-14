@@ -31,15 +31,37 @@ O **Blogs Api** é uma aplicação RESTful para a manipulação e consultas de p
 
 ```bash
   # Clone the project
-  $ git clone git@github.com:ElimarLucena/Blogs-API.git
+  $ git@github.com:ElimarLucena/API-Blogs.git
 ```
 ```bash
   # Enter directory
-  $ cd Blogs-API
+  $ cd API-Blogs
 ```
 ```bash
   # Install the dependencies
   $ npm install
+```
+## 🏃‍♀️ Running in docker
+<details>
+    <summary><strong>🐋 Before Starting</strong></summary>
+    
+  -  você vai precisar ter instalado em sua máquina o **docker** e **docker-compose**.
+    
+  -  Lembre-se de parar o **mysql** se estiver usando localmente na porta padrão (3306).
+    
+  - Instale as dependências com **npm install**. (Instale dentro do container)
+  
+  - O git dentro do container não vem configurado com suas credenciais. Ou faça os commits fora do container, ou configure as suas credenciais do git dentro do container.
+</details>
+
+Run **node** and **database** services with command
+```bash
+  # run services
+  $ docker-compose up -d --build
+```
+```bash
+  # access to the interactive terminal of the container created by compose
+  $ docker exec -it blogs_api_node bash
 ```
 
 ## Author
